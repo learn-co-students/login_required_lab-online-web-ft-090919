@@ -1,0 +1,6 @@
+<h1>Hi, <%= current_user %>!</h1>
+
+<% form_tag(action: '/destroy', method: 'post') do %>
+    <%= submit_tag "Delete"  %>
+<% end %>
+
