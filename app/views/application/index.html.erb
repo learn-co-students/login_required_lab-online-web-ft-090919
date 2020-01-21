@@ -1,0 +1,5 @@
+<h1>Hello, <%= current_user %></h1>
+<%= link_to 'view secret', '/secret'%>
+<%= form_tag({action: 'destroy', controller: 'sessions'}, method: 'delete') do %>
+  <%= submit_tag 'logout' %>
+<% end %>
